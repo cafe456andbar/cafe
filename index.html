@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shwet Binayak Café Menu</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        .menu-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        h1, h2 {
+            font-family: 'Playfair Display', serif;
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        p {
+            text-align: center;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        .menu-category {
+            margin: 30px 0;
+        }
+        .menu-category h2 {
+            margin-bottom: 20px;
+            border-bottom: 3px solid #333;
+            padding-bottom: 5px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+            border-bottom: 1px solid #ddd;
+        }
+        ul li:last-child {
+            border-bottom: none;
+        }
+        .price {
+            color: #555;
+            font-weight: bold;
+        }
+        .menu-item-image {
+            width: 50px;
+            height: 50px;
+            margin-right: 15px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .menu-item-text {
+            flex: 1;
+        }
+
+        /* Button for download link */
+        a.download-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        a.download-btn:hover {
+            background-color: #0056b3;
+        }
+
+        /* Cocktails, Mocktails, and Cold Beverages Sections */
+        .menu-section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 24px;
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .menu-section ul {
+            padding: 0;
+        }
+        .menu-section ul li {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+        .menu-section li small {
+            font-size: 12px;
+            color: #666;
+        }
+        .menu-section li strong {
+            display: inline-block;
+            width: 200px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            .menu-container {
+                padding: 10px;
+            }
+            ul li {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .price {
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="menu-container">
+        <h1>Cafe 456 Barbeque & Grill</h1>
+        <p>Shwet Binayak Marg, Thapathali, Kathmandu | +977-9864058237, 9844498548</p>
+
+        <!-- Stick Food Section with Images -->
+        <div class="menu-category">
+            <h2>Stick Food</h2>
+            <ul>
+                <li>
+                    <img src="images/sausage.webp" alt="Sausage" class="menu-item-image">
+                    <div class="menu-item-text">Sausage (B/C)</div>
+                    <span class="price">50/60</span>
+                </li>
+                <li>
+                    <img src="images/corn-dogs-lg.webp" alt="Corn Dog Stick" class="menu-item-image">
+                    <div class="menu-item-text">Corn Dog Stick</div>
+                    <span class="price">100</span>
+                </li>
+                <li>
+                    <img src="images/mushroom.webp" alt="Mushroom Stick" class="menu-item-image">
+                    <div class="menu-item-text">Mushroom Stick</div>
+                    <span class="price">60</span>
+                </li>
+                <li>
+                    <img src="images/mozzarella-cheese-on-the-plate-romania.webp" alt="Mozzarella Stick" class="menu-item-image">
+                    <div class="menu-item-text">Mozzarella Stick</div>
+                    <span class="price">110</span>
+                </li>
+                <li>
+                    <img src="images/potatostick.webp" alt="Potato Stick" class="menu-item-image">
+                    <div class="menu-item-text">Potato Stick</div>
+                    <span class="price">50</span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Veg Snacks Section -->
+        <div class="menu-category">
+            <h2>Veg Snacks</h2>
+            <ul>
+                <li>
+                    <img src="images/360_F_126023380_C1VoNoSBkz0hJziJTVDUUFcOo9EgIfxL.webp" alt="French Fries" class="menu-item-image">
+                    <div class="menu-item-text">French Fries</div>
+                    <span class="price">170</span>
+                </li>
+                <li>
+                    <img src="images/veg-tempura.webp" alt="Veg Tempura" class="menu-item-image">
+                    <div class="menu-item-text">Veg Tempura</div>
+                    <span class="price">280</span>
+                </li>
+                <li>
+                    <img src="images/mustang-potato.webp" alt="Mustang Aloo" class="menu-item-image">
+                    <div class="menu-item-text">Mustang Aloo</div>
+                    <span class="price">200</span>
+                </li>
+                <li>
+                    <img src="images/paneer-pakoda.webp" alt="Paneer Pakoda" class="menu-item-image">
+                    <div class="menu-item-text">Paneer Pakoda</div>
+                    <span class="price">260</span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Non-Veg Snacks Section -->
+        <div class="menu-category">
+            <h2>Non-Veg Snacks</h2>
+            <ul>
+                <li>
+                    <img src="images/Fried-Chicken.webp" alt="Crispy Chicken" class="menu-item-image">
+                    <div class="menu-item-text">Crispy Chicken</div>
+                    <span class="price">320</span>
+                </li>
+                <li>
+                    <img src="images/buffalo-wings.webp" alt="Buffalo Wings" class="menu-item-image">
+                    <div class="menu-item-text">Buffalo Wings</div>
+                    <span class="price">350</span>
+                </li>
+                <li>
+                    <img src="images/3.-Spicy-Korean-Fried-Chicken.webp" alt="Korean Spicy Chicken" class="menu-item-image">
+                    <div class="menu-item-text">Korean Spicy Chicken</div>
+                    <span class="price">380</span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Cocktails Section -->
+        <div class="menu-section">
+            <h2>Cocktails</h2>
+            <ul>
+                <li><strong>Screwdriver</strong> <span class="price">450</span> <br><small>(Orange Juice Vodka)</small></li>
+                <li><strong>Mojito</strong> <span class="price">450</span> <br><small>(Light Rum, Lemon Wages, Sugar Syrup, Mint Leaves, Soda)</small></li>
+                <li><strong>Old Fashion</strong> <span class="price">550</span> <br><small>(Whiskey, Soda, Angostura Bitter, Sugar)</small></li>
+                <li><strong>Tequila Sunrise</strong> <span class="price">500</span> <br><small>(Orange Juice, Tequila, Grenadine)</small></li>
+                <li><strong>Moscow Mule</strong> <span class="price">480</span> <br><small>(Vodka, Lemon Juice, Ginger)</small></li>
+                <li><strong>Cosmopolitan</strong> <span class="price">600</span> <br><small>(Vodka, Triple Sec, Lemon Juice, Cranberry)</small></li>
+            </ul>
+        </div>
+
+        <!-- Mocktails Section -->
+        <div class="menu-section">
+            <h2>Mocktails</h2>
+            <ul>
+                <li><strong>Virgin Mojito</strong> <span class="price">300</span> <br><small>(Fresh Mint, Lemon Syrup, Soda)</small></li>
+                <li><strong>Pineapple Cooler</strong> <span class="price">380</span> <br><small>(Pineapple Juice, Coconut Cream)</small></li>
+                <li><strong>Fruit Punch</strong> <span class="price">320</span> <br><small>(Juices, Pineapple, Orange, Cranberry Lime)</small></li>
+                <li><strong>Breezy Blue</strong> <span class="price">320</span> <br><small>(Blue Curacao, Lime Juice, Soda)</small></li>
+                <li><strong>Shirley Temple</strong> <span class="price">320</span> <br><small>(Grenadine Syrup, Lime Juice, Ginger Ale)</small></li>
+                <li><strong>Virgin Mimosa</strong> <span class="price">320</span> <br><small>(Orange Juice, Ginger Ale)</small></li>
+            </ul>
+        </div>
+
+        <!-- Cold Beverages Section -->
+        <div class="menu-section">
+            <h2>Cold Beverages</h2>
+            <ul>
+                <li><strong>Cold Drink</strong> <span class="price">90</span></li>
+                <li><strong>Masala Cold Drink</strong> <span class="price">110</span></li>
+                <li><strong>Mango Lassi</strong> <span class="price">220</span></li>
+                <li><strong>Sweet Lassi</strong> <span class="price">180</span></li>
+                <li><strong>Banana Lassi</strong> <span class="price">200</span></li>
+            </ul>
+        </div>
+
+        <!-- Download button for PDF version of the menu -->
+        <a href="menu.pdf" class="download-btn" download>Download Full Menu (PDF)</a>
+    </div>
+
+</body>
+</html>
